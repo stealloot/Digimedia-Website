@@ -1,3 +1,583 @@
-body{
- background-color: #ccc; 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+  margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+.first-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+ padding:20px 8%;
+ background:#d9d9d9;
+ 
+}
+.header-1 a{
+ margin:0rem 1rem;
+ text-decoration:none;
+ font-family: 'Roboto Slab', serif;
+ color:#4d4d4d;
+transition: 2s;
+}
+.header-1 i{
+ margin:0px 10px;
+ font-size:20px;
+ cursor:pointer;
+}
+#header-1 i{
+ transition: 2s;
+}
+.header-1 a:hover{
+  color:#ff1a75;
+}
+.header-1 i:hover{
+ color:#ff1a75;
+}
+header{
+    position:sticky;
+     top:0;
+     left:0;
+    background:white;
+    display:flex;
+    align-itens:center;
+    justify-content:space-between;
+    padding:20px 8%;
+   box-shadow:0px 2px 5px rgba(0,0,0, 0.4);
+   z-index:100;
+}
+.nav a{
+  text-decoration:none;
+  margin:0px 10px;
+  font-family: 'Roboto Slab', serif;
+ font-weight:bold;
+ color:#808080;
+ transition:2s;
+ text-transform:uppercase;
+}
+.nav a:hover{
+  color:#ff1a75;
+}
+section{
+  padding:4rem 6%;
+}
+#home{
+   display:flex;
+   align-items:center;
+    justify-content:space-between;
+   
+}
+#home .box-1{
+   
+   padding:0px 2%;
+}
+ .box-1 h3{
+  text-transform:uppercase;
+  color:#ff4dd2;
+  font-size:1.4rem;
+  font-family: 'Roboto Slab', serif;
+ 
+}
+.box-1 h1{
+  margin:1rem 0;
+  font-size:3rem;
+  font-family: 'Roboto Slab', serif;
+}
+.box-1 p{
+    font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom:25px; 
+  color:#999999;
+}
+.box-1 a{
+  text-decoration:none;
+  padding:12px 18px;
+  border:1px solid #ff4dd2;
+   border-radius:30px;
+  color:#ff4dd2;
+  background:transparent;
+  font-family: 'Roboto Slab', serif;
+  font-weight:bold;
+}
+.box-1 a:hover{
+  background:#ff4dd2;
+  color:white;
+}
+.box-1 img{
+  width:40vw;
+}
+#about{
+   display:flex;
+   align-items:center;
+    justify-content:space-between;
+   
+}
+#about .box-2{
+  padding:0px 2%;
+}
+.box-2 img{
+  width:40vw;
+}
+.box-2 h3{
+  text-transform:uppercase;
+  color:#1a8cff;
+  font-size:1.4rem;
+  font-family: 'Roboto Slab', serif;
+ 
+ 
+}
+.box-2 h1{
+  margin:1rem 0;
+  font-size:2.3rem;
+  font-family: 'Roboto Slab', serif;
+  position:relative;
+}
+.box-2 h1::after{
+  content:" ";
+   width:0;
+   height:5px;
+   background:#ff4dd2;
+   bottom:-25%;
+   left:0;
+  position:absolute;
+   cursor:pointer;
+  transition: 0.5s;
+  
+}
+.box-2 h1:hover::after{
+    width:80px;
+}
+.box-2 p{
+    font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  margin:1rem 0rem; 
+  color:#999999;
+}
+.box-2 h1 span{
+  color:#0073e6;
+}
+.box-2 p span{
+  color:#1a8cff;
+}
+
+#service{
+  
+  text-align:center;
+}
+#service h3{
+     font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  text-transform:uppercase;
+  color:#ff4d4d;
+}
+#service h1{
+    padding:1rem 0rem;
+     font-size:2.4rem;
+  font-family: 'Roboto Slab', serif;
+  position:relative;
+}
+#service h1 span{
+     color:#ff4d4d;
+}
+
+#service h1::after{
+  content:" ";
+   width:0;
+   height:5px;
+   background:#ff4d4d;
+   bottom:0;
+   left:50%;
+  transform:translateX(-50%);
+  position:absolute;
+   cursor:pointer;
+  transition: 0.5s;
+  
+}
+#service h1:hover::after{
+    width:80px;
+}
+#service .box-3{
+   display:grid;
+   grid-gap:10px;
+   grid-template-areas:'icon-1 icon-2 icon-3 icon-4 icon-5';
+   padding:3rem 2%;
+}
+#icon-1{
+   grid-area:icon-1;
+}
+#icon-2{
+   grid-area:icon-2;
+}
+#icon-2 i{
+    background:#ffb366;
+    color:#999900;
+}
+#icon-3{
+   grid-area:icon-3;
+}
+#icon-3 i{
+    background:#99e6e6;
+    color:#248f8f;
+}
+#icon-4{
+   grid-area:icon-4;
+}
+#icon-4 i{
+    background:#ffb84d;
+    color:#e65c00;
+}
+#icon-5{
+   grid-area:icon-5;
+}
+#icon-5 i{
+    background:#99e699;
+    color:#661a00;
+}
+.box-3 .icon{
+  border:2px solid #bfbfbf;
+  padding:10px;
+  border-radius:15px;
+  box-shadow:0px 10px 10px rgba(0,0,0,0.4);
+  }
+.icon i{
+   width:5rem;
+   height:5rem;
+   background:#8cd9b3;
+   line-height:5rem;
+   border-radius:50%;
+   color:#ff66ff;
+}
+.icon h4{
+    font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  
+}
+#service .box-4{
+         padding:3rem 2%;
+         border:2px solid #d9d9d9;
+    border-radius:15px;
+    box-shadow:0px 10px 10px rgba(0,0,0,0.5);   
+}
+.box-4 .report-1{
+   display:flex;
+   align-items:center;
+  justify-content:space-between;
+  padding:1.5rem;
+}
+.report-1 .report{
+   text-align:left;
+  padding:1rem;
+}
+
+.report p{
+   font-size:1.1rem;
+  font-family: 'Roboto Slab', serif;
+  color:#8c8c8c;
+ margin:1rem 0rem;
+  }
+.report h6{
+   font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  line-height:1.8;
+}
+.report i{
+  margin-right:10px;
+  color:#33ff99;
+}
+.box-5 {
+   text-align:center;
+   background:url("../image/service1.png");
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   min-height:50vh;
+   padding:3rem 1rem;
+}
+.box-5 h3{
+     font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  color:#a6a6a6;
+}
+.box-5 h1{
+    padding:1rem 0rem;
+     font-size:2.4rem;
+  font-family: 'Roboto Slab', serif;
+  position:relative;
+ color:white;
+ 
+}
+.box-5 h1::after{
+   content:"";
+   width:0px;
+   height:5px;
+   background:black;
+   left:50%;
+   bottom:0;
+   transform:translate(-50%);
+   position:absolute;
+   transition: 1s;
+   
+}
+.box-5:hover h1::after{
+     width:80px;
+}
+.box-5 .search{
+  width:500px;
+  height:80px;
+  background:white;
+  margin:1rem auto;
+  border-radius:50px;
+  display:flex;
+   align-items:center;
+   
+}
+.search input{
+   width:100%;
+   background:transparent;
+    padding:8px;
+    outline:none;
+    border:none; 
+     height:100%;
+     font-weight:bold;
+   font-size:1rem;  
+}
+.search input[type=button]{
+   font-weight:bold;
+   font-size:1rem;
+  font-family: 'Roboto Slab', serif;
+}
+::placeholder {
+  color: #a6a6a6;
+  opacity: 1;
+  font-weight:bold; 
+}
+#project{
+   text-align:center;
+}
+#project h3{
+     font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  
+  color:#ff4d4d;
+}
+#project h1{
+    padding:1rem 0rem;
+     font-size:2.4rem;
+  font-family: 'Roboto Slab', serif;
+  position:relative;
+}
+#project h1 span{
+     color:#ff4d4d;
+}
+#project .project{
+    padding:1rem 0rem;
+    display:flex;
+    align-items:center;
+   justify-content:space-between;
+}
+.project .box-6{
+    padding:1rem;
+    border:2px solid #a6a6a6;
+    border-radius:20px;
+   box-shadow:0px 10px 10px rgba(0,0,0,0.5);
+}
+.box-6 h3{
+     font-size:1.2rem;
+     padding:10px 0px;
+}
+.box-6 p{
+    font-size:1rem;
+   color:#808080;
+   font-family: 'Roboto Slab', serif;
+}
+#contact{
+   text-align:center;
+   position:relative;
+}
+#contact .i{
+   position:absolute;
+  top:1rem;
+  right:8rem;
+  z-index:-1;
+}
+#contact h3{
+     font-size:1.2rem;
+  font-family: 'Roboto Slab', serif;
+  color:#ff4d4d;
+}
+#contact h1{
+    padding:1rem 0rem;
+     font-size:2.4rem;
+  font-family: 'Roboto Slab', serif;
+  position:relative;
+}
+#contact h1 span{
+     color:#ff4d4d;
+}
+#contact .contact{
+   margin:2rem 0rem;
+   border:2px solid #a6a6a6;
+    border-radius:20px;
+   box-shadow:0px 10px 10px rgba(0,0,0,0.5);
+   display:flex;
+   align-items:center;
+   
+  width:100%;
+}
+.contact #map{
+   width:40%;
+}
+#map iframe{
+  border-radius:20px;
+}
+.contact #form{
+   padding:2rem;
+   width:60%;
+   
+}
+#form .form{
+    display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+.form-1 p{
+    padding:1rem 0rem;
+    
+    font-family: 'Roboto Slab', serif;
+}
+.form-1 p:hover{
+   cursor:pointer;
+   color:#ff3333;
+}
+#form .form-2{
+   display:flex;
+   align-items:center;
+    justify-content:space-between;
+   width:100%;
+   padding:10px 0px;
+  
+}
+.form-2 .form-3{
+   width:50%;
+  
+}
+
+.form-3 input{
+   width:98%;
+  height:45px;
+  margin:10px 0px;
+  border:none;
+  border-bottom:2px solid #a6a6a6;
+ padding:5px;
+}
+.form-3 textarea{
+   width:98%;
+   height:178px;
+   resize:none;
+   margin:10px 0px;
+   border:none;
+   border-bottom:2px solid #a6a6a6;
+   padding:5px;
+}
+#form button{
+   width:100%;
+   padding:10px 0px;
+   border-radius:20px;
+   background:transparent;
+   color:#ff3333;
+   border-color:#ff3333;
+   cursor:pointer;
+   font-family: 'Roboto Slab', serif;
+}
+#form button:hover{
+   color:white;
+   background:#ff3333;
+}
+
+
+@media (max-width:1080px){
+           .report img{
+             width:300px;
+          }
+           .box-6 img{ 
+             width:200px;
+       }
+
+}
+
+@media (max-width:800px){
+                 section{
+               padding:1.5rem 6%;
+           }
+                 #home{
+         flex-direction:column;
+          }
+        .box-1 img{
+          width:80vw;
+       }
+         #about{
+         flex-direction:column;
+   
+         }
+       .box-2 img{
+       width:80vw;
+      }
+       #service .box-3{
+          
+        grid-template-areas:'icon-1' 'icon-2' 'icon-3'           'icon-4' 'icon-5';
+        }
+       .box-3 .icon{
+         margin:10px 0px; 
+         }
+      .box-4 .report-1{
+          flex-direction:column;
+          padding:1rem;
+         }
+       
+         .report img{
+             width:80vw;
+           }
+         .box-5 { 
+   padding:4rem 1rem;
+    }
+.box-5 h3{
+     font-size:1.2rem;
+      }
+.box-5 h1{
+     font-size:2rem;
+      }
+        .box-5 .search{
+      width:300px;
+      height:50px;
+      }
+       .search input{
+    padding:5px;
+        }
+       #project .project{
+          flex-direction:column;
+        }
+         .project .box-6{
+       margin:1.5rem 0px;
+        }
+        .box-6 img{ 
+             width:80vw;
+       }
+        .box-6 h3{
+     font-size:1.7rem;
+         }
+     .box-6 p{
+    font-size:1.3rem;
+         }
+       #contact .contact{
+           flex-direction:column;
+          }
+       #contact .i{
+           right:4rem;
+        }
+       .contact #map{
+      width:100%;
+       padding:2rem;
+        }
+    .contact #form{
+      width:100%;
+        }
 }
